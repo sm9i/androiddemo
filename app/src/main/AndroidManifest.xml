@@ -19,7 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Player1" />
-        <activity android:name=".Player2"></activity>
+        <activity
+            android:name=".Player2"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

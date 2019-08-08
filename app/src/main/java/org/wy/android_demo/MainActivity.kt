@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         btn_player_2.setOnClickListener {
             startActivity(Intent(this, Player2::class.java))
         }
+
     }
 
 
