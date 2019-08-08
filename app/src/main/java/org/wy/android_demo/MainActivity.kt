@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
         btn_player_1.setOnClickListener {
             startActivity(Intent(this, Player1::class.java))
         }
+        btn_player_2.setOnClickListener {
+            startActivity(Intent(this, Player2::class.java))
+        }
     }
 
 
