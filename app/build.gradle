@@ -5,6 +5,19 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    flavorDimensions "androiddemo"
+    productFlavors {
+        oppo{
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "OPPO"]
+        }
+        yyb{
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "YYB"]
+        }
+        baidu{
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "BAIDU"]
+        }
+    }
+
     compileSdkVersion 28
     defaultConfig {
         applicationId "org.wy.android_demo"
@@ -27,6 +40,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
 
     }
+
+
 }
 
 dependencies {
